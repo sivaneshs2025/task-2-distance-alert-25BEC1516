@@ -1,0 +1,13 @@
+Hardware Architecture & Pin Mapping
+
+The system relies on an **ESP32 microcontroller** interfacing with an ultrasonic sensor for input acquisition and a digital alert element for indication.
+
+| Component | Component Pin | ESP32 GPIO Pin | Function / Direction |
+
+| **HC-SR04 Sensor** | VCC | 5V / Vin | Main Power Input |
+| **HC-SR04 Sensor** | GND | GND | Ground Reference |
+| **HC-SR04 Sensor** | Trig | GPIO 5 | Output (Trigger Signal Pulse) |
+| **HC-SR04 Sensor** | Echo | GPIO 18 | Input (Echo Return Duration Pulse) |
+| **LED / Buzzer** | Anode (+) | GPIO 2 | Output (Alert Trigger Channel) |
+| **LED / Buzzer** | Cathode (-) | GND | Ground Reference |
+
